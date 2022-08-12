@@ -1,0 +1,560 @@
+
+@media screen and (max-width:896px){
+    h1{
+        font-size: 60px !important;
+    }
+    header nav{
+        top: 3%;
+    }
+    .top2{
+        left : 5%;
+        
+    }
+    .top2 span{
+        color: #3fc4cc;
+    }
+    .top2{
+        font-size: 48px;
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        z-index: 2;
+    }
+    .top2 p{
+        line-height: 1.4em;
+        padding-bottom:10px ;
+    }
+    .top_img img{
+        width: 90%;
+        left: 10%;
+        object-fit: cover;
+    }
+    .about img{
+        width: 90%;
+    }
+    .about h3{
+        line-height: 1.4em;
+        left: 5%;
+        padding: 5px;
+    }
+    .about-p{
+        padding-left: 5%;
+    }
+    .feature{
+        max-width: 90%;
+    }
+    .feature-all{
+        justify-content: space-around;
+    }
+    .feature11 .slick-prev{
+        left: 30px;
+        z-index: 10;
+    }
+    .feature11 .slick-next{
+        right: 40px;
+        z-index: 10;
+    }
+    .case-study2 .slick-prev{
+        left: 400px;
+        top: -90px;
+    }
+    .case-study2 .slick-next{
+        right: 150px;
+        top: -90px;
+    }
+    .company{
+        padding:  0;
+    }
+    footer{
+        max-height: 600px;
+    }
+}
+
+@media screen and (max-width:480px){
+    h1{
+        font-size: 42px !important;
+        text-align: center;
+    }
+    #header{
+        margin: 10px 10px;
+        width: 30%;
+    }
+    .hanbarger-r img{
+    width: 100%;
+    object-fit: cover;
+    }
+    .hanbarger-r{
+        display: block;
+
+    }
+    #g-nav{
+        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+        position:fixed;
+        z-index: 999;
+        /*ナビのスタート位置と形状*/
+        top:0;
+        right: -120%;
+        width:50%;
+        height: 50vh;/*ナビの高さ*/
+        background:rgba(55, 190, 214, 1);
+        /*動き*/
+        transition: all 0.6s;
+    }
+    
+    /*アクティブクラスがついたら位置を0に*/
+    #g-nav.panelactive{
+        right: 0;
+    }
+    
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list{
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 999; 
+        width: 100%;
+        height: 100vh;/*表示する高さ*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /*ナビゲーション*/
+    #g-nav ul {
+        width: 50%;
+        height: 50vh;
+        text-align: right;
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top:35%;
+        right: 20%;
+        transform: translate(-50%,-50%);
+    }
+    
+    /*リストのレイアウト設定*/
+    
+    #g-nav li{
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+
+    }
+    
+    #g-nav li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding:10px;
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    }
+    
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn1{
+        position:fixed;
+        z-index: 9999;/*ボタンを最前面に*/
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+    height:50px;
+    }
+    
+    /*×に変化*/  
+    .openbtn1 span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+    background-color: white;
+        width: 45%;
+    }
+    
+    .openbtn1 span:nth-of-type(1) {
+    top:15px; 
+    }
+    
+    .openbtn1 span:nth-of-type(2) {
+    top:23px;
+    }
+    
+    .openbtn1 span:nth-of-type(3) {
+    top:31px;
+    }
+    
+    .openbtn1.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+    
+    .openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+    }
+    
+    .openbtn1.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+    .openbtn1{
+        background:rgba(55, 190, 214, .7);
+    }
+    
+    .mx{
+        display: none;
+    }
+    ul.menu{
+        display: none;
+    }
+    .top2 a{
+        padding: 20px 10px;
+        border-radius: 50px;
+        position: absolute;
+        bottom: -115px;
+        right: 5%;
+    }
+    .top2{
+        padding: 10px;
+        font-size: 30px;
+        background: rgba(255,255 ,255, 0.9);
+        border-radius: 10px;
+    }
+    .top2 P {
+        padding-bottom: 0;
+    }
+    .service-1 a{
+    padding: 20px 10px;
+    border-radius: 50px;
+    margin: 50px auto;
+    display: inline-block;
+    
+    }
+    .service li.aaa a{
+        text-align: center;
+    }
+    h3{
+        font-size: 14px !important;
+        background-color: rgba(55, 190, 214, 0.8);
+    }
+    .top_img img{
+        width: 100%;
+        height: 80vh;
+        position:relative ;
+        z-index: 1;
+        object-fit: cover;
+        border-radius: 0 0 0 20px ;
+    }
+    .top_img{
+        width: 90%;
+        left: 0;
+    }
+    .po2 h3.po22 {
+        position: absolute;
+        font-size: 24px;
+        line-height: 2em;
+        bottom: 18%;
+        left: 6%;
+    }
+    .po2 h3.po23 {
+        left: 6%;
+    }
+    .about-p{
+        box-sizing: border-box;
+        padding-top:50px ;
+        padding-left: 0;
+        width: 90%;
+        line-height: 1.8em;
+        margin: 0 auto;
+    }
+    .feature1{
+        width: 100%;
+    }
+    .feature-all{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+    }
+    
+    .feature11{
+        display: none;
+    }
+
+    .pp.slider.res img {
+        width: 80% !important;
+        object-fit: cover;
+        margin: 10px auto;
+        box-shadow: 1px 1px 9px black;
+        box-sizing: border-box;
+    }
+    .pp.slider.res{
+        width: 100%;
+        margin: 50px 0;
+    }
+    .feature22 .slick-prev{
+        left: -3%;
+        z-index: 10;
+    }
+    .feature22 .slick-next{
+        right: 0%;
+        z-index: 10;
+    }
+    .slick-dots {
+        bottom: -10% !important;
+        padding: 20px;
+        margin:  0 auto;
+    }
+    
+
+
+    ul.service-1 {
+        display: block;
+        text-align: left !important;
+    }
+    ul.service-1 h1{
+        margin: 0;
+    }
+    ul.service-1 h1,ul.service-1 p{
+        display: block;
+        text-align: left !important;
+        padding: 0 0 30px 0 ;
+    }
+    .back-ground{
+        padding: 0 !important;
+    }
+    .service-web{
+        position:static;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        top: 0;
+    }
+    
+    .service-web li{
+        width: 50%;
+        padding: 10pxpx;
+        box-sizing: border-box;
+    }
+    .service-1 li{
+        width: 100%;
+    }
+    .service-web p{
+        padding: 5px 0;
+    }
+    .service-web h5{
+        font-size: .3em;
+        padding: 5px 0;
+    }
+    .service-web span{
+        padding: 10px;
+    }
+    .service-1 {
+        padding:  0;
+    }
+
+    .service-1 a.opa{
+        display: none !important;
+    }
+    .service-web a.opa-res{
+        display: inline-block;
+        text-decoration: none;
+        background-color: #3fc5cc;
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 15px 100px;
+        border-radius: 50px;
+        margin-top: 30px;
+    }
+    .service-pozi{
+        padding: 50px 0;
+    }
+    .back-ground{
+        text-align: end;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 100px 0 650px;
+    }
+    .service2{
+        position: static;
+        top: 0;
+    }
+    .service3{
+        top: 0;
+        position: static;
+    }
+    .service4{
+        top: 0;
+        position: static;
+    }
+    .service1 p,.service1 span,
+    .service2 p,.service2 span,
+    .service3 p,.service3 span,
+    .service4 p,.service4 span{
+        font-size: 10px;
+    }
+    .service{
+        height: auto;
+    }
+    .back-ground{
+        padding-bottom:0 ;
+    }
+    ul.dd.slider img{
+        padding: 5px 5px 0 5px;
+        border-radius: 20px;
+        margin: 0 auto;
+        height: 20vh !important;
+        box-shadow: none;
+    }
+    ul.dd.slider{
+        box-sizing: border-box;
+    }
+    .dd.slider{
+        width: 50%;
+    }
+    .coment-2 {
+        max-width: 100%;
+        max-height: 60%;
+        padding: 10px 10px 50px;
+        margin: 5px;
+        position: static;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+    .coment-1{
+        border-radius:20px ;
+        background-color: white;
+    }
+    li.coment-1 {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 9px 1px;
+    }
+    .case-study2 ul.slick-dots li.slick-active button:before {
+        opacity: .75;
+        color:#3fc5cc !important ;
+    }
+    .case-study2 ul.slick-dots li button:before { 
+        opacity: .25;
+        color:#3fc5cc !important ;
+    }
+    .case-study2 ul.slick-dots{
+        bottom: -40px !important;
+    }
+    .case-study h1{
+        white-space: nowrap;
+        
+    }
+    .case-study{
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .case-study2 .slick-next,.case-study2 .slick-prev ,.all a {
+        display: none !important;
+    }
+    .case-study2 ul.slick-dots {
+        width: 100%;
+        margin: 0 auto;
+        }
+        ul.dd.slider li {
+        padding: 20px;
+        box-sizing: border-box;
+        }
+    .dd.slider.res li{
+        padding: 1px ;
+    }
+    .company{
+        margin-top: 50px;
+    
+    }
+    .coment-1{
+        
+        margin: 10px;
+    }
+    .company2 li {
+        align-items: center;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid rgba(0 , 0, 0,0.3);
+    }
+    .company2 ul{
+        padding-top: 25px;
+    }
+    footer p,footer a,footer li, footer ul{
+        padding: 0;
+    }
+    footer p{
+        font-size: 10px;
+        padding: 30px 0;
+    }
+    .footer-logo {
+        width: 20%;
+        padding-bottom: 30px;
+    }
+    ul.menu1{
+        display: none;
+    }
+    ul.menu2{
+        align-items: center;
+        display: block;
+    }
+    footer nav{
+        display: block;
+    }
+    .menu2 li{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(0 , 0, 0,0.3);
+    }
+    .center3 p{
+        padding-bottom: 20px;
+    }
+    .service-1 span{
+        padding-bottom: 20px;
+    }
+    li.aaa p{
+        text-align: center;
+    }
+    .company1 {
+        max-width: 100%;
+    }
+    .center1{
+        max-width: 100%;
+    }
+    .center1 h1{
+        text-align:center;
+    }
+    .center1 p{
+        text-align:center;
+    }
+    .contact_form {
+        margin: 0;
+        font-size: 24px;
+        padding: 50px 0;
+    }
+    .top_img.con img {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+        left: 20%;
+    }
+    .top_img.con {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        left: -20%;
+    }
+}
+
+
